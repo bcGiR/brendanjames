@@ -1,0 +1,40 @@
+/*
+ * Theme Name: Brendan James 
+ * Theme URI: http://localhost/wordpress
+ * Author: Brendan Crawford
+ * Author URI: http://localhost/wordpress
+ * Description:
+ * Version: 1.0
+ * License: 
+ * License URI: 
+ * Tags: black
+ * Text Domain: 
+ *
+ * */
+
+body {
+    background: silver;
+    font: 16px arial, sans-serif;
+}
+
+#container {
+    width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+}
+
+footer {
+    width: 800px;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+#sidebar {
+    border: 1px solid red;
+    float: right;
+    width: 200px;
+}

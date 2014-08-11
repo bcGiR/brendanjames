@@ -1,0 +1,125 @@
+/*
+ * Theme Name: Brendan James 
+ * Theme URI: http://localhost/wordpress
+ * Author: Brendan Crawford
+ * Author URI: http://localhost/wordpress
+ * Description:
+ * Version: 1.0
+ * License: 
+ * License URI: 
+ * Tags: black 
+ *
+ * */
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+
+body {
+    background: #594F4F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+header a:link, header a:visited {
+    color: #E5FCC2;
+    text-decoration: none;
+    font-size: 60px;
+    font-family: 'Satisfy', cursive;
+}
+
+p, h3 {
+    color: #594F4F;
+}
+
+strong {
+    font-size: 24px;
+    color: #547980
+}
+
+em {
+    font-size: 20px;
+    color: #547980;
+}
+
+h2 {
+    color: #45ADA8;
+}
+
+nav a:link,nav a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #E5FCC2;
+}
+
+nav a:hover {
+    color: #9DE0AD;
+}
+
+#container a:link, #container a:visited {
+    color: #45ADA8;
+    text-decoration: none;
+}
+
+#container {
+    background: #E5FCC2;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+#container, header, nav, footer {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    margin: 0 auto;
+}
+
+#sidebar-wrapper {
+    width: 1200px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+#content {
+    width: 800px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+#left {
+    width: 590px;
+    float: left;
+}
+
+header {
+    text-align: center;
+    background: #594F4F;
+}
+
+footer, nav {
+    background: #547980;
+    color: #E5FCC2; 
+}
+
+#sidebar {
+    float: right;
+    width: 135px;
+}
+
+#sidebar li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 10px;
+}
