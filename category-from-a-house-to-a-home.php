@@ -2,7 +2,7 @@
 <?php get_sidebar('left')?>
 <div id="content">
 
-    <?php $query = new WP_query( 'category_name=from_a_house_to_a_home' ); ?>
+    <?php $query = new WP_query( 'category_name=from-a-house-to-a-home' ); ?>
     <?php if($query->have_posts()) : while($query->have_posts()): $query->the_post()?>
 
         <h2><a href="<?php the_permalink()?>"><?php the_title()?></a></h2>
