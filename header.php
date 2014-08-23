@@ -50,4 +50,3 @@ $(document).ready(function(){
 <div id="container">
 <div id="sidebar-wrapper">
 <?php get_sidebar()?>
-<div id="content">
