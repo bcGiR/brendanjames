@@ -5,34 +5,7 @@
     <title><?php bloginfo('title')?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/var/www/html/wordpress/wp-content/themes/brendanjames/scripts.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-        var move = function() {
-            var st = $(window).scrollTop();
-            var ot = $("#sidebar-anchor").offset().top;
-            var ol = $("#sidebar").offset().left;
-            var s = $("#sidebar");
-            if(st > ot) {
-                s.css({
-                    position: "fixed",
-                        top: "0px"
-                });
-                s.css('left', ol);
-            } else {
-                if(st <= ot) {
-                    s.css({
-                        position: "relative",
-                            top: "",
-                            left: ""
-                    });
-                }
-            }
-        };
-        $(window).scroll(move);
-        move();
-});
-</script>
+    <script type="text/javascript" src="http://www.brendanjames.ca/wp-content/themes/brendanjames/scripts.js"></script>
 
     <?php wp_head()?>
 </head>

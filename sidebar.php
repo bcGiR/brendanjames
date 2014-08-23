@@ -1,5 +1,5 @@
 <div id="sidebar-anchor"></div>
-<div id="sidebar">
+<div id="sidebar" class="sidebar">
 <h3>Find me on:</h3>
 <ul>
 <li><a href="https://www.facebook.com/brendan.crawford.353"><img title="facebook" src="http://www.brendanjames.ca/wp-content/uploads/2014/07/FB-f-Logo__blue_58.png" alt="facebook" width="58" height="58" /></a></li>

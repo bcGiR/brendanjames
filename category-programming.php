@@ -1,4 +1,5 @@
 <?php get_header()?>
+<?php get_sidebar('left')?>
 <div id="content">
 
     <?php $query = new WP_query( 'category_name=programming' ); ?>

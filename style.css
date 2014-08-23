@@ -156,12 +156,6 @@ nav a:hover {
     margin: 0 auto;
 }
 
-#sidebar-wrapper {
-    width: 1200px;
-    padding: 0px;
-    margin: 0 auto;
-}
-
 #content {
     width: 800px;
     padding: 0px;
@@ -183,12 +177,28 @@ footer, nav {
     color: #E5FCC2; 
 }
 
+#sidebar-wrapper {
+    width: 1200px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
 #sidebar {
     float: right;
     width: 135px;
 }
 
-#sidebar li {
+#sidebar-left {
+    float: left;
+    width: 150px;
+}
+
+#sidebar-left ul {
+    list-style-type:none;
+    padding: 0px;
+}
+
+.sidebar li {
     list-style-type: none;
     padding-top: 10px;
     padding-bottom: 10px;
