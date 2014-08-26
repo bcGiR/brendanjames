@@ -17,7 +17,7 @@
 </header>
 
 <nav>
-<div id="content">
+<div id="nav">
     <?php wp_nav_menu();?>
 </div>
 </nav>

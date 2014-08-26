@@ -3,7 +3,7 @@
 </div>
 
 <footer>
-<div id="content">
+<div id="footer">
      Copyright <?=date('Y')?> Brendan Crawford
 </div>
 </footer>
