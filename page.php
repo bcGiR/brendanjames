@@ -1,4 +1,5 @@
 <?php get_header()?>
+<div id="buffer"></div>
 <div id="content">
 
     <?php while(have_posts()): the_post()?>

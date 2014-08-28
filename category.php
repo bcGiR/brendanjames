@@ -1,5 +1,6 @@
 <?php get_header()?>
 <?php get_sidebar('left')?>
+<div id="buffer"></div>
 <div id="content">
 
     <?php while(have_posts()): the_post()?>
