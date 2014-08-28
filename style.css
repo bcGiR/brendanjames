@@ -97,6 +97,8 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
+/*******************   My CSS   *******************/
+
 body {
     background: #594F4F;
     font-family: 'Open Sans', sans-serif;
@@ -168,6 +170,11 @@ nav a:hover {
     padding: 0px;
     margin: 0 auto;
     background: #547980;
+}
+
+#buffer {
+    padding-top: 84px;
+    display: none;
 }
 
 header {

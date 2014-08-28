@@ -4,6 +4,7 @@ $(document).ready(function(){
     var s = $("#sidebar");
     var otn = $("#nav-anchor").offset().top;
     var n = $("nav");
+    var b = $("#buffer");
     var diff = ot - otn;
 
     var move = function() {
@@ -12,6 +13,7 @@ $(document).ready(function(){
             s.css('position', 'fixed');
             s.css('top', diff);
             s.css('left', ol);
+            b.show();
         } else {
             if(st <= otn) {
                 s.css({
@@ -19,6 +21,7 @@ $(document).ready(function(){
                     top: "",
                     left: ""
                 });
+                b.hide();
             }
         }
         if(st > otn) {
