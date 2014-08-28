@@ -1,4 +1,3 @@
-<div id="sidebar-anchor-left"></div>
 <div id="sidebar-left" class="sidebar">
 <h3>Categories:</h3>
 <ul>

@@ -1,17 +1,19 @@
 $(document).ready(function(){
+    var ot = $("#sidebar-anchor").offset().top;
+    var ol = $("#sidebar").offset().left;
+    var s = $("#sidebar");
+    var otn = $("#nav-anchor").offset().top;
+    var n = $("nav");
+    var diff = ot - otn;
+
     var move = function() {
         var st = $(window).scrollTop();
-        var ot = $("#sidebar-anchor").offset().top;
-        var ol = $("#sidebar").offset().left;
-        var s = $("#sidebar");
-        if(st > ot) {
-            s.css({
-                position: "fixed",
-                top: "0px"
-            });
+        if(st > otn) {
+            s.css('position', 'fixed');
+            s.css('top', diff);
             s.css('left', ol);
         } else {
-            if(st <= ot) {
+            if(st <= otn) {
                 s.css({
                     position: "relative",
                     top: "",
@@ -19,18 +21,28 @@ $(document).ready(function(){
                 });
             }
         }
+        if(st > otn) {
+            n.css({
+                position: "fixed",
+                top: "0px"
+            });
+        } else {
+            if(st <= otn) {
+                n.css({
+                    position: "relative",
+                    top: "",
+                });
+            }
+        }
         if($("#sidebar-left").length) {
-            var otl = $("#sidebar-anchor-left").offset().top;
             var oll = $("#sidebar-left").offset().left; 
             var sl = $("#sidebar-left");
-            if(st > otl) {
-                sl.css({
-                    position: "fixed",
-                    top: "0px"
-                });
+            if(st > otn) {
+                sl.css('position', 'fixed');
+                sl.css('top', diff);
                 sl.css('left', oll);
             } else {
-                if(st <= otl) {
+                if(st <= otn) {
                     sl.css({
                         position: "relative",
                         top: "",
