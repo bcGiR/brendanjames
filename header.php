@@ -30,5 +30,4 @@
 </div>
 
 <div id="container">
-<div id="sidebar-wrapper">
 <?php get_sidebar()?>
