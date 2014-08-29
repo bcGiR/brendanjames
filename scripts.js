@@ -5,10 +5,28 @@ $(document).ready(function(){
     var otn = $("#nav-anchor").offset().top;
     var n = $("nav");
     var b = $("#buffer");
+    var h = $("#name");
+    var hn = $("#hidden_title");
     var diff = ot - otn;
 
     var move = function() {
         var st = $(window).scrollTop();
+        // Header scrolls down with page
+        if(st <= otn) {
+            hn.hide();
+            var dist = (st/otn) * 100;
+            var ht = (30 + dist/2).toString() + "%";
+            h.css({
+                top: ht
+            });
+        }
+
+        // Once header is scrolled off page, show the home link
+        if(st > otn) {
+            hn.show();
+        }
+
+        // Once window scrolls past anchor, nav and sidebars become fixed
         if(st > otn) {
             s.css('position', 'fixed');
             s.css('top', diff);

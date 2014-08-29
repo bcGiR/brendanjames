@@ -25,6 +25,10 @@
 </div>
 </nav>
 
+<div id="hidden_title">
+<a href="<?php echo home_url('/')?>"><?php bloginfo('name')?></a>
+</div>
+
 <div id="container">
 <div id="sidebar-wrapper">
 <?php get_sidebar()?>

@@ -194,6 +194,20 @@ header {
     background: #547980;
 }
 
+#hidden_title {
+    position: fixed;
+    display: none;
+    top: 20px;
+    left: 10px;
+}
+
+#hidden_title a:link, #hidden_title a:visited {
+    color: #E5FCC2;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Satisfy', cursive;
+}
+
 #buffer {
     padding-top: 84px;
     display: none;
