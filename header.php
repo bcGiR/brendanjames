@@ -13,7 +13,9 @@
 </head>
 
 <header>
+<div id="name">
 <h1><a href="<?php echo home_url('/')?>"><?php bloginfo('name')?></a></h1>
+</div>
 </header>
 
 <div id="nav-anchor"></div>

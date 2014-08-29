@@ -169,10 +169,15 @@ nav {
 
 header {
     width: 100%;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    height: 360px;
+    padding: 0px;
     margin: 0 auto;
     text-align: center;
+}
+
+#name {
+    position: relative;
+    top: 30%;
 }
 
 #content {
