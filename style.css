@@ -11,8 +11,6 @@
  *
  * */
 
-/* Arbitrary change to cause repo update to test a bash script on the desktop PLEASE DELETE ME */
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Satisfy);
 
@@ -109,47 +107,61 @@ body {
     margin: 0;
 }
 
+/*******************   Colours   *******************
+*
+*      Palatte: i demand a pancake, by alpen        
+*      http://www.colourlovers.com/palette/443995/i_demand_a_pancake
+*
+*      Liscenced under the Creative Commons:
+*      http://creativecommons.org/licenses/by-nc-sa/3.0/
+*
+****************************************************/
+
+p, h3 {
+    color: #594F4F; /* Feind */
+}
+
+strong, em {
+    color: #547980; /* Rock My World */
+}
+
+footer, nav {
+    background: #547980; /* Rock My world */
+}
+
+h2, #container a:link, #container a:visited {
+    color: #45ADA8; /* med. green blue */
+}
+
+header a:link, header a:visited, nav a:link,nav a:visited, #hidden_title a:link, #hidden_title a:visited, footer, nav {
+    color: #E5FCC2; /* Pancakes */
+}
+
+#container {
+    background: #E5FCC2; /* Pancakes */
+}
+
+nav a:hover {
+    color: #9DE0AD; /* fetch me some */
+}
+
 header a:link, header a:visited {
-    color: #E5FCC2;
     text-decoration: none;
     font-size: 60px;
     font-family: 'Satisfy', cursive;
-}
-
-p, h3 {
-    color: #594F4F;
-}
-
-strong {
-    color: #547980
-}
-
-em {
-    color: #547980;
-}
-
-h2 {
-    color: #45ADA8;
 }
 
 nav a:link,nav a:visited {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
-    color: #E5FCC2;
-}
-
-nav a:hover {
-    color: #9DE0AD;
 }
 
 #container a:link, #container a:visited {
-    color: #45ADA8;
     text-decoration: none;
 }
 
 #container {
-    background: #E5FCC2;
     border-radius: 4px;
     overflow: auto;
 }
@@ -192,7 +204,6 @@ header {
     width: 50%;
     padding: 0px;
     margin: 0 auto;
-    background: #547980;
 }
 
 #hidden_title {
@@ -203,7 +214,6 @@ header {
 }
 
 #hidden_title a:link, #hidden_title a:visited {
-    color: #E5FCC2;
     text-decoration: none;
     font-size: 24px;
     font-family: 'Satisfy', cursive;
@@ -212,11 +222,6 @@ header {
 #buffer {
     padding-top: 84px;
     display: none;
-}
-
-footer, nav {
-    background: #547980;
-    color: #E5FCC2; 
 }
 
 #sidebar {
