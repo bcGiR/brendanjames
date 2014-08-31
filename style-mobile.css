@@ -125,7 +125,7 @@ strong, em {
     color: #547980; /* Rock My World */
 }
 
-footer, nav {
+footer, nav, .sidebar {
     background: #547980; /* Rock My world */
 }
 
@@ -133,7 +133,7 @@ h2, #container a:link, #container a:visited {
     color: #45ADA8; /* med. green blue */
 }
 
-header a:link, header a:visited, nav a:link,nav a:visited, #hidden_title a:link, #hidden_title a:visited, footer, nav {
+header a:link, header a:visited, nav a:link,nav a:visited, #hidden_title a:link, #hidden_title a:visited, footer, nav, .sidebar {
     color: #E5FCC2; /* Pancakes */
 }
 
@@ -170,6 +170,10 @@ header a:link, header a:visited, #hidden_title a:link, #hidden_title a:visited {
     list-style-type: none;
 }
 
+nav ul li, .sidebar ul li {
+    display: inline-block;
+}
+
 /********************   Layout   ************************/
 
 header, nav, footer, #container, #nav, #content, #footer {
@@ -189,10 +193,6 @@ nav {
     padding-bottom:5px;
 }
 
-    nav ul li {
-        display: inline-block;
-    }
-    
     nav ul li a {
         padding: 5px;
     }

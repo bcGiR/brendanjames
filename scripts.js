@@ -79,11 +79,6 @@ $(document).ready(function(){
     var move_mobile = function() {
         var st = $(window).scrollTop();
 
-        // Once header is scrolled off page, show the home link
-        if(st > otn) {
-            hn.show();
-        }
-
         // Once window scrolls past anchor, nav and sidebars become fixed
         if(st > otn) {
             s.show();
