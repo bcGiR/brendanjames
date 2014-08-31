@@ -158,7 +158,7 @@ nav a:link, nav a:visited {
 }
 
 header a:link, header a:visited, #hidden_title a:link, #hidden_title a:visited {
-    font-size: 60px;
+    font-size: 54px;
     font-family: 'Satisfy', cursive;
 }
 
@@ -178,14 +178,9 @@ header, nav, footer, #container, #nav, #content, #footer {
 
 header {
     width: 100%;
-    height: 360px;
+    height: 180px;
     padding: 0px;
     text-align: center;
-}
-
-#name {
-    position: relative;
-    top: 30%;
 }
 
 nav {
@@ -199,13 +194,8 @@ nav {
     }
     
     nav ul li a {
-        padding: 10px;
+        padding: 5px;
     }
-
-#nav, #content, #footer {
-    width: 50%;
-    padding: 0px;
-}
 
 #container {
     width: 100%;
@@ -215,13 +205,11 @@ nav {
 }
 
 #sidebar {
-    float: right;
-    width: 20%;
+    width: 100%;
 }
 
     #sidebar-left {
-        float: left;
-        width: 20%;
+        width: 100%;
     }
 
     #sidebar-left ul {
@@ -233,23 +221,18 @@ nav {
     }
 
     .sidebar li {
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
 
 #hidden_title {
     position: fixed;
     display: none;
-    top: 20px;
     left: 10px;
 }
 
 #buffer {
     padding: 84px 0px 0px 0px;
     display: none;
-}
-
-#content {
-    padding: 0% 10%;
 }
 
 footer {
