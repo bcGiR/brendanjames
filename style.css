@@ -141,16 +141,20 @@ header a:link, header a:visited, nav a:link,nav a:visited, #hidden_title a:link,
     background: #E5FCC2; /* Pancakes */
 }
 
-nav a:hover {
+nav a:hover, #container a:hover {
     color: #9DE0AD; /* fetch me some */
 }
 
 
 /********************   Decorations   *******************/
 
-header a:link, header a:visited, nav a:link,nav a:visited, #container a:link, #container a:visited, #hidden_title a:link,
+header a:link, header a:visited, nav a:link, nav a:visited, #container a:link, #container a:visited, #hidden_title a:link,
 #hidden_title a:visited {
     text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+    font-size: 20px;
 }
 
 header a:link, header a:visited, #hidden_title a:link, #hidden_title a:visited {
@@ -217,7 +221,7 @@ nav {
 
     #sidebar-left {
         float: left;
-       width: 20%;
+        width: 20%;
     }
 
     #sidebar-left ul {
