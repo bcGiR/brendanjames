@@ -206,10 +206,16 @@ nav {
 
 #sidebar {
     width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: none;
 }
 
     #sidebar-left {
         width: 100%;
+        position: fixed;
+        bottom: 20px;
+        display: none;
     }
 
     #sidebar-left ul {

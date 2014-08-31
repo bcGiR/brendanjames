@@ -9,6 +9,8 @@ $(document).ready(function(){
     var hn = $("#hidden_title");
     var diff = ot - otn;
 
+    var mq = window.matchMedia( "(min-width: 640px)" );
+
     var move = function() {
         var st = $(window).scrollTop();
         // Header scrolls down with page
@@ -73,6 +75,55 @@ $(document).ready(function(){
             }
         }
     };
-    $(window).scroll(move);
-    move();
+
+    var move_mobile = function() {
+        var st = $(window).scrollTop();
+
+        // Once header is scrolled off page, show the home link
+        if(st > otn) {
+            hn.show();
+        }
+
+        // Once window scrolls past anchor, nav and sidebars become fixed
+        if(st > otn) {
+            s.show();
+            b.show();
+        } else {
+            if(st <= otn) {
+                s.hide();
+                b.hide();
+            }
+        }
+        if(st > otn) {
+            n.css({
+                position: "fixed",
+                top: "0px"
+            });
+        } else {
+            if(st <= otn) {
+                n.css({
+                    position: "relative",
+                    top: "",
+                });
+            }
+        }
+        if($("#sidebar-left").length) {
+            var sl = $("#sidebar-left");
+            if(st > otn) {
+                sl.show();
+            } else {
+                if(st <= otn) {
+                    sl.hide();
+                }
+            }
+        }
+    };
+
+    if (mq.matches) {
+        $(window).scroll(move);
+        move();
+    } else {
+        $(window).scroll(move_mobile);
+        move_mobile();
+    }
 });
