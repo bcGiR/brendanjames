@@ -1,0 +1,258 @@
+/*
+ * Theme Name: Brendan James 
+ * Theme URI: http://localhost/wordpress
+ * Author: Brendan Crawford
+ * Author URI: http://localhost/wordpress
+ * Description:
+ * Version: 1.0
+ * License: 
+ * License URI: 
+ * Tags: black 
+ *
+ * */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #E5FCC2;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/*******************   My CSS   *******************/
+
+body {
+    background-image: url("http://www.brendanjames.ca/wp-content/uploads/2014/08/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+/*******************   Colours   *******************
+*
+*      Palatte: i demand a pancake, by alpen        
+*      http://www.colourlovers.com/palette/443995/i_demand_a_pancake
+*
+*      Liscenced under the Creative Commons:
+*      http://creativecommons.org/licenses/by-nc-sa/3.0/
+*
+****************************************************/
+
+p, h3 {
+    color: #594F4F; /* Feind */
+}
+
+strong, em {
+    color: #547980; /* Rock My World */
+}
+
+footer, nav {
+    background: #547980; /* Rock My world */
+}
+
+h2, #container a:link, #container a:visited {
+    color: #45ADA8; /* med. green blue */
+}
+
+header a:link, header a:visited, nav a:link,nav a:visited, #hidden_title a:link, #hidden_title a:visited, footer, nav {
+    color: #E5FCC2; /* Pancakes */
+}
+
+#container {
+    background: #E5FCC2; /* Pancakes */
+}
+
+nav a:hover, #container a:hover {
+    color: #9DE0AD; /* fetch me some */
+}
+
+
+/********************   Decorations   *******************/
+
+header a:link, header a:visited, nav a:link, nav a:visited, #container a:link, #container a:visited, #hidden_title a:link,
+#hidden_title a:visited {
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+    font-size: 20px;
+}
+
+header a:link, header a:visited, #hidden_title a:link, #hidden_title a:visited {
+    font-size: 60px;
+    font-family: 'Satisfy', cursive;
+}
+
+#hidden_title a:link, #hidden_title a:visited {
+    font-size: 24px;
+}
+
+.sidebar li, #sidebar-left ul {
+    list-style-type: none;
+}
+
+/********************   Layout   ************************/
+
+header, nav, footer, #container, #nav, #content, #footer {
+    margin: 0 auto; /* Center everything */
+}
+
+header {
+    width: 100%;
+    height: 360px;
+    padding: 0px;
+    text-align: center;
+}
+
+#name {
+    position: relative;
+    top: 30%;
+}
+
+nav {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+
+    nav ul li {
+        display: inline-block;
+    }
+    
+    nav ul li a {
+        padding: 10px;
+    }
+
+#nav, #content, #footer {
+    width: 50%;
+    padding: 0px;
+}
+
+#container {
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 0px;
+    overflow: auto;
+}
+
+#sidebar {
+    float: right;
+    width: 20%;
+}
+
+    #sidebar-left {
+        float: left;
+        width: 20%;
+    }
+
+    #sidebar-left ul {
+        padding: 0px;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .sidebar li {
+        padding: 10px 0px;
+    }
+
+#hidden_title {
+    position: fixed;
+    display: none;
+    top: 20px;
+    left: 10px;
+}
+
+#buffer {
+    padding: 84px 0px 0px 0px;
+    display: none;
+}
+
+#content {
+    padding: 0% 10%;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 0px;
+}
