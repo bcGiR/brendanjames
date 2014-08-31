@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal website of Brendan James Crawford, Student and Software Developer">
     <title><?php bloginfo('title')?></title>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
+    <link rel="stylesheet" media="(min-width: 640px)" href="<?php bloginfo('stylesheet_url')?>" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://www.brendanjames.ca/wp-content/themes/brendanjames/scripts.js"></script>
 
