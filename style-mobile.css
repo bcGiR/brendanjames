@@ -129,11 +129,12 @@ footer, nav, .sidebar {
     background: #547980; /* Rock My world */
 }
 
-h2, #container a:link, #container a:visited {
+h2, #content a:link, #content a:visited {
     color: #45ADA8; /* med. green blue */
 }
 
-header a:link, header a:visited, nav a:link,nav a:visited, #hidden_title a:link, #hidden_title a:visited, footer, nav, .sidebar {
+header a:link, header a:visited, nav a:link, nav a:visited, #hidden_title a:link, #hidden_title a:visited, footer, nav, .sidebar h3,
+.sidebar ul li a:link, .sidebar ul li a:visited {
     color: #E5FCC2; /* Pancakes */
 }
 
@@ -141,7 +142,7 @@ header a:link, header a:visited, nav a:link,nav a:visited, #hidden_title a:link,
     background: #E5FCC2; /* Pancakes */
 }
 
-nav a:hover, #container a:hover {
+nav a:hover, #container a:hover, .sidebar a:hover {
     color: #9DE0AD; /* fetch me some */
 }
 
@@ -166,7 +167,7 @@ header a:link, header a:visited, #hidden_title a:link, #hidden_title a:visited {
     font-size: 24px;
 }
 
-.sidebar li, #sidebar-left ul {
+.sidebar ul, .sidebar ul li {
     list-style-type: none;
 }
 
@@ -208,26 +209,24 @@ nav {
     width: 100%;
     position: fixed;
     bottom: 0px;
-    display: none;
 }
 
     #sidebar-left {
         width: 100%;
         position: fixed;
-        bottom: 20px;
-        display: none;
-    }
-
-    #sidebar-left ul {
-        padding: 0px;
+        bottom: 0px;
     }
 
     .sidebar {
         text-align: center;
     }
 
-    .sidebar li {
-        padding: 5px 0px;
+    .sidebar ul, .sidebar h3 {
+        padding: 0px;
+    }
+
+    .sidebar h3 {
+        margin: 8px 0px 9px 0px;
     }
 
 #hidden_title {
@@ -241,7 +240,16 @@ nav {
     display: none;
 }
 
+#content {
+    padding: 0px 10px;
+}
+
 footer {
     width: 100%;
     padding: 10px 0px;
+}
+
+#footer_buffer {
+    padding: 100px 0px 0px 0px;
+    display: none;
 }

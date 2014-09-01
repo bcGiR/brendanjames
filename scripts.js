@@ -2,9 +2,11 @@ $(document).ready(function(){
     var ot = $("#sidebar-anchor").offset().top;
     var ol = $("#sidebar").offset().left;
     var s = $("#sidebar");
+    var sh = $("#sidebar_header");
     var otn = $("#nav-anchor").offset().top;
     var n = $("nav");
     var b = $("#buffer");
+    var fb = $("#footer_buffer");
     var h = $("#name");
     var hn = $("#hidden_title");
     var diff = ot - otn;
@@ -12,6 +14,7 @@ $(document).ready(function(){
     var mq = window.matchMedia( "(min-width: 640px)" );
 
     var move = function() {
+        console.log('move');
         var st = $(window).scrollTop();
         // Header scrolls down with page
         if(st <= otn) {
@@ -81,7 +84,9 @@ $(document).ready(function(){
 
         // Once window scrolls past anchor, nav and sidebars become fixed
         if(st > otn) {
-            s.show();
+            if(!$("#sidebar-left").length) {
+                s.show(); // sidebar shows up only on non-blog pages
+            }
             b.show();
         } else {
             if(st <= otn) {
@@ -119,6 +124,9 @@ $(document).ready(function(){
         move();
     } else {
         $(window).scroll(move_mobile);
+        fb.show();
+        s.hide();
+        sh.hide();
         move_mobile();
     }
 });
