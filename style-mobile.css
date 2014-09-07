@@ -159,8 +159,11 @@ nav a:link, nav a:visited {
 }
 
 header a:link, header a:visited, #hidden_title a:link, #hidden_title a:visited {
-    font-size: 54px;
     font-family: 'Satisfy', cursive;
+}
+
+header a:link, header a:visited {
+    font-size: 54px;
 }
 
 #hidden_title a:link, #hidden_title a:visited {
