@@ -14,7 +14,6 @@ $(document).ready(function(){
     var mq = window.matchMedia( "(min-width: 640px)" );
 
     var move = function() {
-        console.log('move');
         var st = $(window).scrollTop();
         // Header scrolls down with page
         if(st <= otn) {
