@@ -38,7 +38,7 @@
 
 /********************   Decorations   *******************/
 
-header a:link, header a:visited, #hidden_title a:link, #hidden_title a:visited {
+header a:link, header a:visited {
     font-size: 60px;
 }
 
