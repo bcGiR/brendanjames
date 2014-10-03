@@ -36,6 +36,10 @@
     color: #45ADA8; /* med. green blue */
 }
 
+#container a:hover, .sidebar ul li a:hover {
+    color: #547980; /* rock my world */
+}
+
 /********************   Decorations   *******************/
 
 header a:link, header a:visited {
